@@ -4,15 +4,14 @@ Gem::Specification.new do |s|
   s.name        = "foreman_enc_matcher_value_only"
   s.version     = ForemanEncMatcherValueOnly::VERSION
   s.date        = Date.today.to_s
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ForemanEncMatcherValueOnly."
-  s.description = "TODO: Description of ForemanEncMatcherValueOnly."
+  s.authors     = ["Huai Jiang"]
+  s.email       = ["huajiang@ebay.com"]
+  s.homepage    = "https://github.com/HuaiJiang/foreman_enc_matcher_value_only.git"
+  s.summary     = "get matcher value parameters only for enc."
+  s.description = "get matcher value parameters only for enc"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "deface"
   #s.add_development_dependency "sqlite3"
 end
