@@ -1,4 +1,5 @@
 class Setting::Enc_Matcher_Value_Only < Setting
+  BLANK_ATTRS << 'enc_matcher_value_only_environments'
 
   def self.load_defaults
     # Check the table exists
@@ -8,7 +9,7 @@ class Setting::Enc_Matcher_Value_Only < Setting
 
       Setting.transaction do
         [
-          self.set('enc_matcher_value_only', 'Foreman ENC return matcher value parameters only', false),
+          self.set('enc_matcher_value_only_environments', 'The environments that Foreman ENC return matcher value parameters only', []),
         ].compact.each { |s| self.create s.update(:category => 'Setting::General')}
       end
 

@@ -8,7 +8,8 @@ module ForemanEncMatcherValueOnlyPatch
 
        # create or overwrite class methods...
       def hashed_class_parameters_with_matcher_value_only
-        unless Setting[:enc_matcher_value_only]
+
+        unless Setting[:enc_matcher_value_only_environments].include?(@host.environment.to_s)
           Rails.logger.debug "ForemanEncMatcherValueOnlyPatch: return all"
           return hashed_class_parameters_without_matcher_value_only
         end
