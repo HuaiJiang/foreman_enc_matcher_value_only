@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email       = ["huajiang@ebay.com"]
   s.homepage    = "https://github.com/HuaiJiang/foreman_enc_matcher_value_only.git"
   s.summary     = "get matcher value parameters only for enc."
-  s.description = "get matcher value parameters only for enc"
+  s.description = "control enc behavior in settings for each environments"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
